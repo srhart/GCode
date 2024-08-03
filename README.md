@@ -3,9 +3,11 @@ A selection of G-code macros for Fanuc Σ16T/Σ18T family.
 Mostly modal macros for a lathe with Y and C. X is diameter.
 
 ## M5510 - Mill a set of concentric holes.
-        ToDo - add Z depth peck profiles and helical ramp
+ToDo - add Z depth peck profiles and helical ramp.
+
+Note: *Type II parameters*
+
         G65 P5510 A__ B__ C__ [I__ K__ J__ .....] 
-        [!NOTE] Type II parameters
         A,B (Z,Y) Centre
         C: Clerance height
         Each I,J,K are holes
@@ -14,20 +16,23 @@ Mostly modal macros for a lathe with Y and C. X is diameter.
         J: Twice round set to 1
 
 ## M5520 - Drill a set of holes on a diameter, no peck drilling.
-        [!NOTE] CB is used for rear working. Change to C for front working.
+Note: *CB is used for rear working. Change to C for front working.*
+
         G65 P5520 X__ R__ Z__ E__
         X: The hole centre (PDC)
         R: Clearange height
         Z: Hole depth
         E: The number of holes
-        [!NOTE]
-        Axis should be G17
-        C should be locked
-        Rotating tool should be started
-        Feed rate should be set
+
+Notes:
+ - Axis should be G17
+ - C should be locked
+ - Rotating tool should be started
+ - Feed rate should be set
 
 ## M5530 - (Modal) Mill a triangle pocket.
-        ToDo - add helical ramp to start, spiral out
+ToDo - add helical ramp to start, spiral out.
+
         G65/G66 P5530 X__ U__ V__ Z__ D__ R__ Q__ A__ B__ C__ F__
         Y: Allways 0, X: Centre 
         V: Width v
@@ -43,7 +48,8 @@ Mostly modal macros for a lathe with Y and C. X is diameter.
         E: Base radius multiplier
 
 ## M5550 - (Modal) Mill a hexagonal pocket.
-        ToDo - add helical ramp to start
+ToDo - add helical ramp to start.
+
         G65/G66 P5550 X__ Y__ Z__ A__ B__ D__ E__ F__ R__ Q__
         X, Y: Centre
         A: Side length
@@ -56,7 +62,8 @@ Mostly modal macros for a lathe with Y and C. X is diameter.
         F: Feed rate
 
 ## M5560 - (Modal) Mill a trapezoid pocket. (WiP)
-        ToDo - add helical ramp to start
+ToDo - add helical ramp to start.
+
         G65/G66 P5560 X__ Y__ Z__ U__ V__ W__ B__ D__ E__ F__ R__ Q__
         X, Y: Centre
         U: Height
@@ -71,7 +78,7 @@ Mostly modal macros for a lathe with Y and C. X is diameter.
         F: Feed rate
 
 ## M5570 - (Modal) Mill a circular pocket with helical ramp (WiP)
-        ToDo - add helical ramp to start
+ToDo - add helical ramp to start.
 
 ## M5590 - (Modal) Mill a hole with a helical ramp
         G65/G66 P5590 X__ Y__ Z__ B__ D__ Q__ H__ F__ R__ ;
