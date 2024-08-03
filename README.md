@@ -16,7 +16,8 @@ Note: *Type II parameters*
         J: Twice round set to 1
 
 ## M5520 - Drill a set of holes on a diameter, no peck drilling.
-        [!NOTE] CB is used for rear working. Change to C for front working.
+Note: CB is used for rear working. Change to C for front working.
+
         G65 P5520 X__ R__ Z__ E__
         X: The hole centre (PDC)
         R: Clearange height
