@@ -19,6 +19,7 @@ ax.nc
 O10(SPINDLE WARM UP).NC
 O134.nc
 O135.nc
+O546.nc
 O542.nc
 O551.nc
 O552.nc
@@ -26,11 +27,14 @@ O554.nc
 O555.nc
 O556.nc
 O557.nc
+O559.nc
 O561.nc
 O562.nc
 O564.nc
 O565.nc
 O569.nc
+O572.nc
+O576.nc
 O1666.nc
 O1667.nc
 OLD O552 (CENTRE SHALLOW) old.nc
@@ -47,9 +51,4 @@ M5560-bk.NC
 test.txt
 5560-gwiz.nc
 O554-TMP.nc
-O556.nc
-O556.nc
-O556.nc
 O6554.nc
-O556.nc
-O556.nc
